@@ -1,0 +1,63 @@
+@import "../../styles/mixins.scss";
+
+.cardImg 
+{
+	height: 100%;
+	width: 100%;
+	transition: opacity 0.8s ease-out;
+}
+
+.unselectable {
+	pointer-events: none;
+    -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
+    -webkit-user-select: none;
+    -ms-user-select: none; /* From IE10 only */
+    user-select: none; /* Not valid CSS yet, as of July 2012 */
+
+    -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+    user-drag: none;
+}
+
+.cardSize
+{
+	width: 85%;
+	height: 85%;
+}
+
+.flipCard {
+	background-color: transparent;
+	transition: opacity 0.8s;
+	perspective: 1000px;
+}
+
+.flipCardInner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.flipCardFront,
+.flipCardBack {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 0.4rem;
+	background-color: white;
+
+	@include cardShadow();
+}
+
+.flipCardFront {
+}
+
+.flipCardBack {
+	transform: rotateY(180deg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.4rem;
+}

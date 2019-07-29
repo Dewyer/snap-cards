@@ -1,0 +1,39 @@
+@import "../../styles/mixins.scss";
+
+
+.mainContainer
+{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 4rem;
+    width: 100vw;
+    background-color: black;
+    
+    @include strongDownShadow();
+
+    padding: 0rem 1.5rem;
+}
+
+.snapLogo
+{
+    height: 2rem;
+}
+
+.title
+{
+    margin: 0;
+    margin-left:2rem;
+    color: white;
+    min-width: 10rem;
+}
+
+.controlls
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}

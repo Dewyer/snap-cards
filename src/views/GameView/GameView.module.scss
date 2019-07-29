@@ -1,0 +1,17 @@
+
+.mainContainer
+{
+    padding: 2rem 2rem;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.gameOver
+{
+    font-weight: 700;
+    font-size: 4rem;
+}

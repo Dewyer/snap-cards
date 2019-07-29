@@ -1,0 +1,45 @@
+
+.best
+{
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+
+    &>p
+    {
+        margin: 0;
+        margin-bottom: 0.4rem;
+        color:gray;
+    }
+
+    &>p:last-child
+    {
+        color:black;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+}
+
+.current
+{
+    display: flex;
+    flex-direction: row;
+    &>p
+    {
+        margin: 0;
+        margin-right: 0.5rem;
+        color:gray;
+    }
+
+}
+
+.mainContainer
+{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+}
